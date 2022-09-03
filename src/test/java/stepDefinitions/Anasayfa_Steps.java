@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import pages.Locates;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 public class Anasayfa_Steps {
@@ -10,7 +11,7 @@ public class Anasayfa_Steps {
 
     @Given("Sezer Amazona gider")
     public void sezer_amazona_gider() {
-
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
 
     }
     @Given("Arama kutusuna kalem yazar")
