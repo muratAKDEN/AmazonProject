@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AmazonProject" />
+        <module name="medunne_team56" />
       </profile>
     </annotationProcessing>
   </component>
