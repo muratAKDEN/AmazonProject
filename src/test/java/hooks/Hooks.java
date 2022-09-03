@@ -17,6 +17,7 @@ public class Hooks {
     public void setUp() {
 
    //seni cok seviyorum
+        // soyleme ki eskimesin
         spec = new RequestSpecBuilder().setBaseUri("https://amazon.com").build();
 
     }
