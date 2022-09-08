@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Given;
+import net.bytebuddy.asm.Advice;
+import org.openqa.selenium.Keys;
 import pages.Locates;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -16,6 +18,7 @@ public class Anasayfa_Steps {
     }
     @Given("Arama kutusuna kalem yazar")
     public void arama_kutusuna_kalem_yazar() {
+        locates.searchBx.sendKeys("bicycle"+ Keys.ENTER);
 
     }
 
